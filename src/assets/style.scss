@@ -2,6 +2,12 @@
 
 * {
   font-family: 'Open Sans', sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
@@ -29,4 +35,8 @@ a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+button {
+  cursor: pointer;
 }

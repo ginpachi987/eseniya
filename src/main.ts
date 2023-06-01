@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 
 import './assets/style.scss'
 
@@ -11,4 +12,5 @@ library.add(faGear, faXmark)
 
 createApp(App)
   .component('font-awesome-icon', FontAwesomeIcon)
+  .use(router)
   .mount('#app')
